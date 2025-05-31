@@ -1,0 +1,87 @@
+2025-05-31 12:54:47 [INFO]: ⚡️ Server running on port 3000 in development mode 
+2025-05-31 12:54:47 [INFO]: 👉 API available at http://localhost:3000 
+2025-05-31 12:54:47 [INFO]: ✅ Database connection established successfully. 
+2025-05-31 12:54:47 [INFO]: ✅ Database models synced successfully. 
+2025-05-31 12:54:47 [INFO]: 
+🟢 Server initialization complete - Press Ctrl+C to stop 
+2025-05-31 12:55:22 [INFO]: ⚡️ Server running on port 3000 in development mode 
+2025-05-31 12:55:22 [INFO]: 👉 API available at http://localhost:3000 
+2025-05-31 12:55:22 [INFO]: ✅ Database connection established successfully. 
+2025-05-31 12:55:22 [INFO]: ✅ Database models synced successfully. 
+2025-05-31 12:55:22 [INFO]: 
+🟢 Server initialization complete - Press Ctrl+C to stop 
+2025-05-31 12:55:34 [INFO]: ⚡️ Server running on port 3000 in development mode 
+2025-05-31 12:55:34 [INFO]: 👉 API available at http://localhost:3000 
+2025-05-31 12:55:34 [INFO]: ✅ Database connection established successfully. 
+2025-05-31 12:55:34 [INFO]: ✅ Database models synced successfully. 
+2025-05-31 12:55:34 [INFO]: 
+🟢 Server initialization complete - Press Ctrl+C to stop 
+2025-05-31 12:56:33 [INFO]: ⚡️ Server running on port 3000 in development mode 
+2025-05-31 12:56:33 [INFO]: 👉 API available at http://localhost:3000 
+2025-05-31 12:56:33 [INFO]: ✅ Database connection established successfully. 
+2025-05-31 12:56:33 [INFO]: ✅ Database models synced successfully. 
+2025-05-31 12:56:33 [INFO]: 
+🟢 Server initialization complete - Press Ctrl+C to stop 
+2025-05-31 12:56:46 [INFO]: ::ffff:127.0.0.1 - - [31/May/2025:09:56:46 +0000] "GET / HTTP/1.1" 200 59 "-" "axios/1.9.0" {
+  "requestId": "req-1748685406230-gquuuoimu"
+}
+2025-05-31 12:56:46 [INFO]: ::ffff:127.0.0.1 - - [31/May/2025:09:56:46 +0000] "POST /api/auth/register HTTP/1.1" 400 49 "-" "axios/1.9.0" {
+  "requestId": "req-1748685406274-vtghogo50"
+}
+2025-05-31 12:56:46 [INFO]: ::ffff:127.0.0.1 - - [31/May/2025:09:56:46 +0000] "POST /api/auth/login HTTP/1.1" 200 320 "-" "axios/1.9.0" {
+  "requestId": "req-1748685406360-yl260jw6o"
+}
+2025-05-31 12:56:46 [INFO]: ::ffff:127.0.0.1 - - [31/May/2025:09:56:46 +0000] "GET /api/user/profile HTTP/1.1" 200 200 "-" "axios/1.9.0" {
+  "requestId": "req-1748685406445-6ia7pcyno"
+}
+2025-05-31 12:56:46 [INFO]: ::ffff:127.0.0.1 - - [31/May/2025:09:56:46 +0000] "PATCH /api/user/coin HTTP/1.1" 200 36 "-" "axios/1.9.0" {
+  "requestId": "req-1748685406465-at5kr95q0"
+}
+2025-05-31 12:56:46 [INFO]: ::ffff:127.0.0.1 - - [31/May/2025:09:56:46 +0000] "POST /api/stories/english HTTP/1.1" 201 285 "-" "axios/1.9.0" {
+  "requestId": "req-1748685406488-vnufg3fon"
+}
+2025-05-31 12:56:47 [INFO]: ::ffff:127.0.0.1 - - [31/May/2025:09:56:47 +0000] "GET /api/stories/english HTTP/1.1" 200 26 "-" "axios/1.9.0" {
+  "requestId": "req-1748685407020-ioe2vvee1"
+}
+2025-05-31 12:56:47 [INFO]: ::ffff:127.0.0.1 - - [31/May/2025:09:56:47 +0000] "POST /api/words/english HTTP/1.1" 201 133 "-" "axios/1.9.0" {
+  "requestId": "req-1748685407031-326kjlrx1"
+}
+2025-05-31 12:56:47 [INFO]: ::ffff:127.0.0.1 - - [31/May/2025:09:56:47 +0000] "GET /api/words/english HTTP/1.1" 200 26 "-" "axios/1.9.0" {
+  "requestId": "req-1748685407549-j70f3a7ds"
+}
+2025-05-31 12:56:47 [INFO]: ::ffff:127.0.0.1 - - [31/May/2025:09:56:47 +0000] "DELETE /api/stories/english/08aa4aa4-34c8-4700-9856-5058d446f337 HTTP/1.1" 404 64 "-" "axios/1.9.0" {
+  "requestId": "req-1748685407570-rbdbw7rzy"
+}
+2025-05-31 12:56:47 [INFO]: ::ffff:127.0.0.1 - - [31/May/2025:09:56:47 +0000] "DELETE /api/words/english/b7164478-8360-4265-a2a0-a4cccb21fafe HTTP/1.1" 404 62 "-" "axios/1.9.0" {
+  "requestId": "req-1748685407587-ylfru7uat"
+}
+2025-05-31 13:00:10 [INFO]: ⚡️ Server running on port 3000 in development mode 
+2025-05-31 13:00:10 [INFO]: 👉 API available at http://localhost:3000 
+2025-05-31 13:00:10 [INFO]: ✅ Database connection established successfully. 
+2025-05-31 13:00:10 [INFO]: ✅ Database models synced successfully. 
+2025-05-31 13:00:10 [INFO]: 
+🟢 Server initialization complete - Press Ctrl+C to stop 
+2025-05-31 13:00:17 [INFO]: ⚡️ Server running on port 3000 in development mode 
+2025-05-31 13:00:17 [INFO]: 👉 API available at http://localhost:3000 
+2025-05-31 13:00:17 [INFO]: ✅ Database connection established successfully. 
+2025-05-31 13:00:18 [INFO]: ✅ Database models synced successfully. 
+2025-05-31 13:00:18 [INFO]: 
+🟢 Server initialization complete - Press Ctrl+C to stop 
+2025-05-31 13:01:15 [INFO]: ⚡️ Server running on port 3000 in development mode 
+2025-05-31 13:01:15 [INFO]: 👉 API available at http://localhost:3000 
+2025-05-31 13:01:15 [INFO]: ✅ Database connection established successfully. 
+2025-05-31 13:01:15 [INFO]: ✅ Database models synced successfully. 
+2025-05-31 13:01:15 [INFO]: 
+🟢 Server initialization complete - Press Ctrl+C to stop 
+2025-05-31 13:01:24 [INFO]: ::ffff:127.0.0.1 - - [31/May/2025:10:01:24 +0000] "GET /api/user/profile HTTP/1.1" 401 61 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" {
+  "requestId": "req-1748685684662-l2mwhpgaj"
+}
+2025-05-31 13:01:24 [INFO]: ::ffff:127.0.0.1 - - [31/May/2025:10:01:24 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/api/user/profile" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" {
+  "requestId": "req-1748685684708-3s8gpsjci"
+}
+2025-05-31 13:01:39 [INFO]: ::ffff:127.0.0.1 - - [31/May/2025:10:01:39 +0000] "GET /api/user/profile HTTP/1.1" 401 61 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" {
+  "requestId": "req-1748685699116-rdv6xgqtw"
+}
+2025-05-31 13:01:39 [INFO]: ::ffff:127.0.0.1 - - [31/May/2025:10:01:39 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/api/user/profile" "Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0" {
+  "requestId": "req-1748685699154-i3df76tbm"
+}

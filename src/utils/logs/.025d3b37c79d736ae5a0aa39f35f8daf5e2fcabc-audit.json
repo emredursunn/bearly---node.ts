@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/emre/Documents/backend/bearly-backend/src/utils/logs/.025d3b37c79d736ae5a0aa39f35f8daf5e2fcabc-audit.json",
+    "files": [
+        {
+            "date": 1748685250038,
+            "name": "/home/emre/Documents/backend/bearly-backend/src/utils/logs/error-2025-05-31.log",
+            "hash": "dc33cbb6a4cdf69967c6f53b24e7bd8779471329e40991a2d05ce8d61ccdaa17"
+        }
+    ],
+    "hashType": "sha256"
+}
