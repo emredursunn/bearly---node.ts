@@ -1,9 +1,9 @@
 {
   "name": "bearly-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "ts-node src/server.ts",
+    "start": "nodemon --exec ts-node src/server.ts",
     "dev": "nodemon --exec ts-node src/server.ts",
     "build": "tsc",
     "setup-db": "ts-node src/scripts/setupDatabase.ts",
