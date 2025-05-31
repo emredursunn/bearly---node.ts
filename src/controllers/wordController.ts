@@ -75,8 +75,9 @@ export const saveWord = async (req: Request, res: Response): Promise<void> => {
     languages[language].words = [...(languages[language].words || []), newWord];
 
     // Update user with new languages data
-    user.languages = languages;
-    await user.save();
+    user.set('languages', languages);
+    user.changed('languages', true); // Explicitly mark the field as changed
+    await user.save({fields: ['languages']});
 
     res.status(201).json({
       success: true,
@@ -130,8 +131,9 @@ export const deleteWord = async (req: Request, res: Response): Promise<void> => 
     
     // Update the words array
     languages[language].words = updatedWords;
-    user.languages = languages;
-    await user.save();
+    user.set('languages', languages);
+    user.changed('languages', true); // Explicitly mark the field as changed
+    await user.save({fields: ['languages']});
 
     res.status(200).json({
       success: true,

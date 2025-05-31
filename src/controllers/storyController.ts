@@ -83,8 +83,9 @@ export const saveStory = async (req: Request, res: Response): Promise<void> => {
     languages[language].stories = [...(languages[language].stories || []), newStory];
 
     // Update user with new languages data
-    user.languages = languages;
-    await user.save();
+    user.set('languages', languages);
+    user.changed('languages', true); // Explicitly mark the field as changed
+    await user.save({fields: ['languages']});
 
     res.status(201).json({
       success: true,
@@ -138,8 +139,9 @@ export const deleteStory = async (req: Request, res: Response): Promise<void> =>
     
     // Update the stories array
     languages[language].stories = updatedStories;
-    user.languages = languages;
-    await user.save();
+    user.set('languages', languages);
+    user.changed('languages', true); // Explicitly mark the field as changed
+    await user.save({fields: ['languages']});
 
     res.status(200).json({
       success: true,
