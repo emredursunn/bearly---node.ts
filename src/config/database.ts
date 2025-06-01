@@ -24,7 +24,10 @@ const sequelize = new Sequelize(dbName, dbUser, dbPassword, {
     idle: 10000
   },
   dialectOptions: {
-    // Add any dialect options if needed
+    ssl: {
+      require: true,
+      rejectUnauthorized: false, // Render gibi platformlarda genellikle self-signed sertifika olur
+    },
   }
 });
 
