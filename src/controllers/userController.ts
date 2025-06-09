@@ -29,6 +29,34 @@ export const getUserProfile = async (req: Request, res: Response): Promise<void>
   }
 };
 
+// Get user coin
+export const getUserCoin = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const user = await User.findByPk(req.user.id);
+
+    if (!user) {
+      res.status(404).json({
+        success: false,
+        message: 'User not found'
+      });
+      return;
+    }
+
+    res.status(200).json({
+      success: true,
+      data: {
+        coin: user.coin
+      }
+    });
+  } catch (error) {
+    console.error('Get coin error:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Server error'
+    });
+  }
+};
+
 // Update user coin
 export const updateUserCoin = async (req: Request, res: Response): Promise<void> => {
   try {
