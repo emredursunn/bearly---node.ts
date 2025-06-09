@@ -1,5 +1,5 @@
 import express from 'express';
-import { getUserStories, saveStory, deleteStory } from '../controllers/storyController';
+import { getUserStories, saveStory, deleteStory, getStoryContent } from '../controllers/storyController';
 import { protect } from '../middleware/auth';
 
 const router = express.Router();
@@ -21,5 +21,10 @@ router.post('/:language', saveStory);
 // @desc    Delete a story
 // @access  Private
 router.delete('/:language/:storyId', deleteStory);
+
+// @route   GET /api/stories/:language/:storyId/content
+// @desc    Get a specific story's content
+// @access  Private
+router.get('/:language/:storyId/content', getStoryContent);
 
 export default router;

@@ -20,9 +20,14 @@ export const getUserStories = async (req: Request, res: Response): Promise<void>
     const languages = user.languages as { [key: string]: { stories: Story[], words: any[] } };
     const userLanguage = languages[language] || { stories: [], words: [] };
 
+    const storiesWithoutContent = (userLanguage.stories || []).map(story => {
+      const { content, ...storyWithoutContent } = story;
+      return storyWithoutContent;
+    });
+
     res.status(200).json({
       success: true,
-      data: userLanguage.stories || []
+      data: storiesWithoutContent
     });
   } catch (error) {
     console.error('Get stories error:', error);
@@ -149,6 +154,46 @@ export const deleteStory = async (req: Request, res: Response): Promise<void> =>
     });
   } catch (error) {
     console.error('Delete story error:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Server error'
+    });
+  }
+};
+
+// Get specific story content for a specific language
+export const getStoryContent = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { language, storyId } = req.params;
+    const user = await User.findByPk(req.user.id);
+
+    if (!user) {
+      res.status(404).json({
+        success: false,
+        message: 'User not found'
+      });
+      return;
+    }
+
+    const languages = user.languages as { [key: string]: { stories: Story[], words: any[] } };
+    const userLanguage = languages[language] || { stories: [], words: [] };
+
+    const story = (userLanguage.stories || []).find(s => s.id === storyId);
+
+    if (!story) {
+      res.status(404).json({
+        success: false,
+        message: 'Story not found'
+      });
+      return;
+    }
+
+    res.status(200).json({
+      success: true,
+      data: story // Return the full story object, including content
+    });
+  } catch (error) {
+    console.error('Get story content error:', error);
     res.status(500).json({
       success: false,
       message: 'Server error'
